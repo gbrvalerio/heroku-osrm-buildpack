@@ -2,19 +2,19 @@
 
 # only the 3rd condition is actually needed - this is verbose for my memory
 # pbf file and profile
-if [ -f $1/osrm_routing_server/data.pbf ] && [ -f $1/osrm_routing_server/profile.lua ]; then
+if [ -f $1/osrm_routing_machine/data.pbf ] && [ -f $1/osrm_routing_machine/profiles/car.lua ]; then
   echo "OSRM/PBF"
   exit 0
 # extracted files and profile
-elif [ -f $1/osrm_routing_server/data.osrm ] && [ -f $1/osrm_routing_server/data.osrm.nodes ] && [ ! -f $1/osrm_routing_server/data.osrm.core ] && [ -f $1/profile.lua ]; then
+elif [ -f $1/osrm_routing_machine/data.osrm ] && [ -f $1/osrm_routing_machine/data.osrm.nodes ] && [ ! -f $1/osrm_routing_machine/data.osrm.core ] && [ -f $1/profiles/car.lua ]; then
   echo "OSRM/Extracted"
   exit 0  
 # prepared files and profile
-elif [ -f $1/osrm_routing_server/data.osrm.core ] && [ -f $1/osrm_routing_server/profile.lua ]; then
+elif [ -f $1/osrm_routing_machine/data.osrm.core ] && [ -f $1/osrm_routing_machine/profiles/car.lua ]; then
   echo "OSRM/Prepared"
   exit 0  
 # profile only - we will look to config vars during compile
-elif [ -f $1/osrm_routing_server/profile.lua ]; then
+elif [ -f $1/osrm_routing_machine/profiles/car.lua ]; then
   echo "OSRM/Download"
   exit 0  
 else
