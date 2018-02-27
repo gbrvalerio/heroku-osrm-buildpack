@@ -1,4 +1,4 @@
-:repo:deb ppa:ubuntu-toolchain-r/test g++-6 gcc-6 build-essential
+echo 'jhsdf'
 cmake
 lua5.2
 libboost-all-dev
