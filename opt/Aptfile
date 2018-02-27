@@ -1,4 +1,5 @@
-gcc5.4
+g++-6
+gcc-6
 cmake
 lua5.2
 libboost-all-dev
