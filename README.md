@@ -35,7 +35,7 @@ There are a number of options for specifying the data files that will be used by
 
 ####Data Files in the App's Git Repository
 
-The root directory of the app's Git repository must match one of the following criteria for the detect phase to succeed:
+The root directory/osrm_routing_server/ of the app's Git repository must match one of the following criteria for the detect phase to succeed:
 
 - a PBF file called `data.pbf` AND a profile called `profile.lua`
 
