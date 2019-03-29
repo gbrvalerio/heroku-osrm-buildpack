@@ -66,5 +66,4 @@ if [ ! -f $BUILD_DIR/Procfile ]; then
   echo "web: /app/osrm-routed -p \$PORT /app/data.osrm" > $BUILD_DIR/Procfile
   echo "web: /app/osrm-routed -p \$PORT /app/data.osrm" > /app/Procfile
   echo "web: /app/osrm-routed -p \$PORT /app/data.osrm" > ./Procfile
-  # echo "web: /app/osrm-routed -p \$PORT /app/data.osrm" > ./app/Procfile
 fi
